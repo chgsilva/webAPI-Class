@@ -1,0 +1,55 @@
+
+Carlos Henrique Gonçalves e Silva 
+Student ID: 104668154 
+CSCI 3800 - WEB API
+Assignment 1
+Monday, 02/05/2015
+
+Rest - Reader of the response
+
+HTTP/1.1 200 OK
+	Code that says that the request was successful.
+
+Expires: Sun, 08 Feb 2015 02:46:01 GMT
+	Says when the data expires.
+
+Date: Sun, 08 Feb 2015 02:46:01 GMT
+	The actual time on the server
+
+Cache-Control: private, max-age=0, must-revalidate, no-transform
+	The private means that the resquest is specific for the end user.
+	The max-age-0 is similar to the "expires", but this information overwrite the information of the expire field. The -0 is the quantity of seconds that it expires.
+	The must-revalidate is used to say that the configuration should be uploaded.
+	Some proxies will convert the content to inprove performance, this header doesn't allowed it to do that.
+
+
+ETag: "_rmWcTkH-s1QFjg9mC3Xel0FZSQ/aKzLPfmampYlfjer_fv7e9YerZQ"
+	Unique identifier for the thing that is being requested.
+
+Vary: Origin
+	The Vary header tells the client which request headers it can vary to get different resentations of a resource.
+
+Vary: X-Origin
+	The Vary header tells the client which request headers it can vary to get different resentations of a resource.
+
+Content-Type: application/json; charset=UTF-8
+	Specific the content type. In this case, specifies that is a json and the encoding is UTF-8.
+
+X-Content-Type-Options: nosniff
+	Prevents the browser to MIME-sniffing.
+
+X-Frame-Options: SAMEORIGIN
+	Provides Clickjacking protection. In this case, it only rendering if it is from the same origin.
+
+X-XSS-Protection: 1; mode=block
+	Provides protection from a XSS attack.
+
+Content-Length: 26982
+	Indicates the size of the body
+
+Server: GSE
+	It informs the client about the software used on the remote machine.
+
+Alternate-Protocol: 443:quic,p=0.02
+	The Alternate-Protocol HTTP response header indicates that a server supports a different protocol, so in a future request, the client might use this different protocol instead of http.
+

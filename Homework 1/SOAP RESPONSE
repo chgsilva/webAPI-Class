@@ -1,0 +1,38 @@
+Carlos Henrique Gonçalves e Silva 
+Student ID: 104668154 
+CSCI 3800 - WEB API
+Assignment 1
+Monday, 02/05/2015
+
+SOAP
+
+HTTP/1.1 200 OK
+	Code that says that the request was successful.
+
+Cache-Control: private, max-age=0
+	The private means that the resquest is specific for the end user.
+	The max-age-0 is similar to the "expires", but this information overwrite the information of the expire field. The -0 is the quantity of seconds that it expires.
+
+Content-Type: text/xml; charset=utf-8
+	Specify the content type. In this case, specifies that is a text/xml and the encoding is UTF-8.
+
+Content-Encoding: gzip
+	Specify the type of enconding that is used. In this case it is encoding in a gzip.
+
+Vary: Accept-Encoding
+
+Server: Microsoft-IIS/7.0
+	It informs the client about the software used on the remote machine.
+
+X-AspNet-Version: 4.0.30319
+	Version of the ASP.NET tha was used.
+
+X-Powered-By: ASP.NET
+	Powered by ASP.NET
+
+Date: Sun, 08 Feb 2015 18:28:29 GMT
+	The actual time on the server
+
+Content-Length: 402
+	Indicates the size of the body
+

@@ -1,0 +1,26 @@
+
+Carlos Henrique Gonçalves e Silva 
+Student ID: 104668154 
+CSCI 3800 - WEB API
+Assignment 1
+Monday, 02/05/2015
+
+
+REST
+
+Header of the Request
+
+- GET https://www.googleapis.com/books/v1/volumes?q=turing HTTP/1.1
+	The command get means that we want to retrieve this page. The HTTP/1.1 means that is the new version of HTPP . 
+
+- Accept-Encoding: gzip,deflate
+	Says to the server which encoding are acceptable.
+
+- Host: www.googleapis.com
+	Indicates the host and the port to the server. In this case, the number of the port is not explicit. It implies that there is the default port (80, for URL). 
+
+- Connection: Keep-Alive
+	Indicates that the connection will be keeped alive. This means that if we want to request something else, there is no the handshaking to open the connection again.
+
+- User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+	Indicates the agent that makes the request. It's use for statistical only.
