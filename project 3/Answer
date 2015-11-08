@@ -1,0 +1,8 @@
+Q: Basic Authorization is easily handled in the main flow, without the need for an additional proxy.
+Give one reason (there are many) OAuth tokens should not be granted in the main flow, assuming the user has sent in the 
+correct credentials.
+
+A: Basic is recommended when we have our own server working with our own application, 
+but when we need to use some api(a external server), is recommended that we use Oauth because we do not have to send the 
+password/login on every request. Once we get the authorization token from the server, we just need to use it, so it does not 
+need to be on the main flow. With Oauth we can track/denied access just for one session that is showing a suspicious behavior.
